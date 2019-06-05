@@ -1,4 +1,7 @@
 import random, sys, string, os, time, base64
+#Coded by s1ege
+#Greetz to all GSH members
+#Use for educational purposes, blah blah
 
 def gen_gd():
 		print("""
