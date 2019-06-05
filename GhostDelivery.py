@@ -26,7 +26,7 @@ This tool is designed create a obfuscated .vbs script with two options:
 	*Obfuscates the vbs script
 
 This tool also has a serveo function to deliver obfuscated vbs script
-				""")
+			""")
 
 def clear():
 	if os.name == "nt": 
