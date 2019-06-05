@@ -52,7 +52,8 @@ class build():
 			print("Enter ps1/exe")
 			time.sleep(2)
 			main()
-	
+
+
 		heavy = {'heavy','h'}
 		light = {'light','l'}
 
