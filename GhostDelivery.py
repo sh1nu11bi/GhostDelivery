@@ -40,12 +40,14 @@ class build():
 	def vbs(self):
 		
 		input = raw_input("Is your payload a powershell script or executable? enter 'ps1' or 'exe': ").lower()
+
+		pwsh = {'powershell','ps1','.ps1', 'pwsh', 'p'}
+		exe = {'executable','exe','.exe', 'e'}
+		
 		if input in pwsh:
 			powershell()
-
 		elif input in exe:
-			executable()
-
+			executable()	
 		else:
 			print("Enter ps1/exe")
 			time.sleep(2)
@@ -53,8 +55,6 @@ class build():
 	
 		heavy = {'heavy','h'}
 		light = {'light','l'}
-		pwsh = {'powershell','ps1','.ps1', 'pwsh', 'p'}
-		exe = {'executable','exe','.exe', 'e'}
 
 		def executable():
 			clear()
