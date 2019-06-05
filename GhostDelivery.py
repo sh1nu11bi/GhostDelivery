@@ -38,6 +38,18 @@ def clear():
 class build():
 
 	def vbs(self):
+		
+		input = raw_input("Is your payload a powershell script or executable? enter 'ps1' or 'exe': ").lower()
+		if input in pwsh:
+			powershell()
+
+		elif input in exe:
+			executable()
+
+		else:
+			print("Enter ps1/exe")
+			time.sleep(2)
+			main()
 	
 		heavy = {'heavy','h'}
 		light = {'light','l'}
@@ -66,18 +78,6 @@ class build():
 			else:
 				powershell()
 			x.replace(script)
-
-		input = raw_input("Is your payload a powershell script or executable? enter 'ps1' or 'exe': ").lower()
-		if input in pwsh:
-			powershell()
-
-		elif input in exe:
-			executable()
-
-		else:
-			print("Enter ps1/exe")
-			time.sleep(2)
-			main()
 
 
 	def replace(self, script):
